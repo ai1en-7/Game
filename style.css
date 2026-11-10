@@ -18,30 +18,30 @@ html,body{height:100%;overflow:hidden;background:var(--night);color:var(--ink);
 #combo{color:var(--mint)}
  
 #lightbar{position:fixed;left:20px;right:20px;bottom:max(20px,env(safe-area-inset-bottom));height:8px;border-radius:8px;
-  background:rgba(243,233,210,.12);overflow:hidden;pointer-events:none}
+  background:rgba(232,241,248,.12);overflow:hidden;pointer-events:none}
 #lightfill{display:block;height:100%;width:100%;background:var(--amber);border-radius:8px;
   box-shadow:0 0 14px var(--amber);transition:background .3s}
-#lightbar.low #lightfill{background:#ff7a59;box-shadow:0 0 14px #ff7a59}
+#lightbar.low #lightfill{background:#ff4f6d;box-shadow:0 0 14px #ff4f6d}
  
 #pulse{position:fixed;right:20px;bottom:44px;padding:12px 20px;font:inherit;font-size:1rem;color:var(--ink);
-  background:rgba(138,79,208,.25);border:2px solid var(--shade);border-radius:999px;cursor:pointer;
+  background:rgba(91,108,255,.25);border:2px solid var(--shade);border-radius:999px;cursor:pointer;
   transition:opacity .2s,transform .1s}
 #pulse:active{transform:scale(.95)}
 #pulse.cool{opacity:.35}
  
 #screen{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:18px;padding:28px;text-align:center;background:rgba(10,7,26,.78);backdrop-filter:blur(3px)}
+  gap:18px;padding:28px;text-align:center;background:rgba(5,12,24,.78);backdrop-filter:blur(3px)}
 #screen[hidden]{display:none}
 #title{font-size:clamp(2.4rem,8vw,4.6rem);color:var(--amber);letter-spacing:.01em;
-  text-shadow:0 0 28px rgba(255,200,87,.55);animation:glow 3s ease-in-out infinite}
+  text-shadow:0 0 28px rgba(255,138,92,.55);animation:glow 3s ease-in-out infinite}
 #text{max-width:34em;font-size:1.2rem;line-height:1.55}
 .keys{max-width:34em;font-size:.95rem;opacity:.6;font-style:italic;line-height:1.5}
-#start{margin-top:8px;padding:14px 34px;font:inherit;font-size:1.25rem;font-weight:700;color:#2a1a05;
-  background:var(--amber);border:0;border-radius:999px;cursor:pointer;box-shadow:0 0 26px rgba(255,200,87,.5);
+#start{margin-top:8px;padding:14px 34px;font:inherit;font-size:1.25rem;font-weight:700;color:#2a0f05;
+  background:var(--amber);border:0;border-radius:999px;cursor:pointer;box-shadow:0 0 26px rgba(255,138,92,.5);
   transition:transform .15s}
 #start:hover{transform:scale(1.05)}
 #start:focus-visible,#pulse:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
  
-@keyframes glow{50%{text-shadow:0 0 12px rgba(255,200,87,.3)}}
+@keyframes glow{50%{text-shadow:0 0 12px rgba(255,138,92,.3)}}
 @media (prefers-reduced-motion:reduce){#title{animation:none}}
 @media (max-width:520px){#hud{gap:18px}.stat b{font-size:1.5rem}}
