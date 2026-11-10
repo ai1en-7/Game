@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Последний фонарь</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="hud" hidden>
+  <div class="stat"><span class="label">Очки</span><b id="score">0</b></div>
+  <div class="stat"><span class="label">Серия</span><b id="combo">×1</b></div>
+  <div class="stat"><span class="label">Рекорд</span><b id="best">0</b></div>
+</div>
+<div id="lightbar" hidden><i id="lightfill"></i></div>
+<button id="pulse" hidden>Вспышка</button>
+
+<section id="screen">
+  <h1 id="title">Последний фонарь</h1>
+  <p id="text">Лес погружается во тьму. Ловите светлячков, чтобы фонарь не погас, и отгоняйте теней вспышкой.</p>
+  <p class="keys">Мышь или палец — вести фонарь · WASD / стрелки — тоже · Пробел — вспышка</p>
+  <button id="start">Зажечь фонарь</button>
+</section>
+
+<script src="game.js"></script>
+</body>
+</html>
